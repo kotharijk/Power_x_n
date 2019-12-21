@@ -8,6 +8,27 @@ namespace Power_x_n
     class Program
     {
         /// <summary>
+        /// Function to calculate x raised to the power n using Divide & Conquer algorithm.
+        /// It is optimized for O(log n)
+        /// </summary>
+        /// <param name="num">A decimal value</param>
+        /// <param name="exponent">An integer value</param>
+        /// <returns>Result of num raised to the power exponent</returns>
+        private static decimal calcPower(decimal num, int exponent)
+        {
+            if (exponent == 0)
+                return 1;
+
+            decimal tempValue = calcPower(num, exponent / 2);
+
+            if (exponent % 2 == 0)
+                return tempValue * tempValue;
+            else
+                return num * tempValue * tempValue;
+        }
+
+
+        /// <summary>
         /// This is the Main method
         /// </summary>
         /// <param name="args"></param>
@@ -48,26 +69,6 @@ namespace Power_x_n
             PrintResult(num, exponent, result);
 
             Console.Read();
-        }
-
-        /// <summary>
-        /// Function to calculate x raised to the power n using Divide & Conquer algorithm.
-        /// It is optimized for O(log n)
-        /// </summary>
-        /// <param name="num">A decimal value</param>
-        /// <param name="exponent">An integer value</param>
-        /// <returns>Result of num raised to the power exponent</returns>
-        private static decimal calcPower(decimal num, int exponent)
-        {
-            if (exponent == 0)
-                return 1;
-
-            decimal tempValue = calcPower(num, exponent / 2);
-
-            if (exponent % 2 == 0)
-                return tempValue * tempValue;
-            else
-                return num * tempValue * tempValue;
         }
 
         /// <summary>
