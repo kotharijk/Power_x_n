@@ -1,0 +1,5 @@
+C:\JKK\Projects\Power_x_n\Power_x_n\bin\Debug\Power_x_n.exe.config
+C:\JKK\Projects\Power_x_n\Power_x_n\bin\Debug\Power_x_n.exe
+C:\JKK\Projects\Power_x_n\Power_x_n\bin\Debug\Power_x_n.pdb
+C:\JKK\Projects\Power_x_n\Power_x_n\obj\Debug\Power_x_n.exe
+C:\JKK\Projects\Power_x_n\Power_x_n\obj\Debug\Power_x_n.pdb
